@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Acunetix Security Inc. - Dashboard</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+    <!-- Sidebar Section -->
+    <aside class="sidebar">
+        <h2 style="color:green;">Acunetix Security Inc.</h2>
+        <ul>
+            <li><a href="#dashboard">Dashboard</a></li>
+            <li><a href="#services">Services</a></li>
+            <li><a href="#vulnerabilities">Vulnerabilities</a></li>
+            <li><a href="#store">Store</a></li>
+            <li><a href="#account">Account</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </aside>
+    <!-- Main Dashboard Content -->
+    <main class="main-content">
+        <h1 style="color:blue;" align="center">ACUNETIX SECURITY INC.</h1><br>
+        <header>
+            <h1>Dashboard</h1>
+            <div class="user-info">
+                <span>🙎🏾‍♂️ Admin</span>
+                <span>🔔 Notifications</span>
+
+            </div>
+        </header>
+
+        <section class="dashboard-grid">
+            
+            <div class="card">
+                <h3>Total Threats</h3>
+				<p>210</p>
+            </div>
+            <div class="card">
+                <h3>Threat Trend</h3>
+				<p>0.5675%</p>
+            </div>
+            <div class="card">
+                <h3>Avg. Threat Score</h3>
+				<p>50 %</p>
+            </div>
+            <div class="card">
+                <h3>Time to Resolve (Avg)</h3>
+				<p>2000 ms</p>
+            </div>
+            <div class="card">
+                <h3>Critical Vulnerabilities</h3>
+				<p>200</p>
+            </div>
+
+            <div class="chart-container">
+                <canvas id="donutChart"></canvas>
+            </div>
+            <div class="chart-container">
+                <canvas id="scatterChart"></canvas>
+            </div>
+            <div class="chart-container">
+                <canvas id="barChart"></canvas>
+            </div>
+        </section>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>
